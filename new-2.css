@@ -1,0 +1,46 @@
+body {
+  background: white;
+}
+/*crocheting paragraph*/
+p {
+  color: black;
+}
+/*crocheting subtitle*/
+h1 {
+  font-weight:lighter;
+  font-family: fantasy;
+  color: #c9aaee;
+  text-shadow:-4px 3px #9c9a9a;
+  text-align: center;
+}
+/*crocheting image <div>*/
+.crocheting-img{
+  display:flex;
+  flex-direction: row;  
+  justify-content: space-between;
+}
+/*crocheting image*/
+.crocheting-img img {
+  display:flex;
+  width: 200px;
+  justify-content: space-between; 
+}
+/*crocheting list*/
+li{
+  font-family:cursive;
+  color:#141516
+}
+/*crocheting paragraph*/
+p {
+  color: black;
+  font-family:cursive
+}
+/*sublitle2*/
+h2{
+  font-weight: bold;
+  text-align: center;
+  font-weight:lighter;
+  font-family: fantasy;
+  color: #e6d2ff;
+  text-shadow:-4px 3px #9c9a9a; 
+}

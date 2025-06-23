@@ -1,0 +1,43 @@
+body {
+  background: white;
+}
+/*baking paragraph*/
+p {
+  color: black;
+  font-family:cursive
+}
+/*baking subtitle*/
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-weight:lighter;
+  font-family: fantasy;
+  color: #c9aaee;
+  text-shadow:-4px 3px #9c9a9a;
+}
+/*baking image <div>*/
+.baking-img{
+  display:flex;
+  flex-direction: row;  
+  justify-content: space-between;
+}
+/*baking image*/
+.baking-img img {
+  display:flex;
+  width: 200px;
+  justify-content: space-between;  
+}
+/*baking list*/
+li{
+  font-family:cursive;
+  color:#141516
+}
+/*sublitle2*/
+ h2{
+   font-weight: bold;
+   text-align: center;
+   font-weight:lighter;
+   font-family: fantasy;
+   color: #e6d2ff;
+   text-shadow:-4px 3px #9c9a9a; 
+}
