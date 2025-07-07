@@ -1,0 +1,35 @@
+body {
+  background: white;
+}
+p {
+  color: black;
+  text-align: center
+}
+h1 {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -4px 4px lightgray;
+}
+a {
+  color: #5f75b4;
+  text-decoration: none;
+  text-shadow: none;
+  background-color: #c7daf0;
+  border-style:solid;
+  border-radius: 25px;
+}
+.Naples-img {
+  display:flex;
+  flex-direction: row;  
+  justify-content: space-around;
+}
+.Naples-img img {
+  display:flex;
+  width: 200px;
+  justify-content: space-around; 
+}
+h3 {
+  text-align: center;
+  color: #6789cf;
+  text-shadow: -3px 3px lightgray;
+}
