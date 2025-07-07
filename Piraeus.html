@@ -26,3 +26,27 @@
   <p><li>Visiting cities:When in Piraeus, Greece, you should visit the nearby city of Athens, as well as the Saronic Islands like Aegina, Hydra, and Poros. Within Piraeus itself, explore the neighborhoods of Mikrolimano and Pasalimani (Zea) with their marinas, waterfront promenades, and restaurants. Additionally, consider visiting the Archaeological Museum of Piraeus and Kastella hill for panoramic views. </li></p>
   <p><li>Try new foods:When in Piraeus, Greece, a port city near Athens, you should definitely try fresh seafood, including grilled octopus and fish, due to its coastal location. Also, sample traditional Greek dishes like moussaka, souvlaki, and gyros. Don't miss out on local specialties like fried zucchini and Greek salad. </li></p>
   <ol>
+     <h2>Weather Information</h2>
+  <p id="location"></p>
+  <p id="temperature"></p>
+  <p id="description"></p>
+
+    <script>const apiKey = "c0951af96de1fd164604162b30386cf6"
+const city = "Paris" // Replace with desired city
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const location = data.name
+    const temperature = data.main.temp
+    const description = data.weather[0].description
+
+    document.getElementById("location").textContent = `Location: ${location}`
+    document.getElementById("temperature").textContent =
+      `Temperature: ${temperature}°C`
+    document.getElementById("description").textContent =
+      `Description: ${description}`
+  })
+  .catch((error) => console.error("Error fetching weather data:", error))
+</script>
