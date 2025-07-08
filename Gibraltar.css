@@ -32,3 +32,9 @@ h3 {
   text-align: center;
   color: #6789cf;
   text-shadow: -3px 3px lightgray;
+}
+h2 {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: -4px 4px lightgray;
+}
