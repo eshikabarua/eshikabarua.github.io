@@ -26,3 +26,27 @@
   <p><li>Visiting cities:La Spezia serves as a gateway to several beautiful towns and areas. The most popular destination nearby is the Cinque Terre, a UNESCO World Heritage site consisting of five picturesque villages: Monterosso al Mare, Vernazza, Corniglia, Manarola, and Riomaggiore. Other notable places to visit include Portovenere, Lerici, Levanto, and Portofino, all easily accessible from La Spezia. </li></p>
   <p><li>Try new foods:In La Spezia, you should definitely try seafood dishes like stuffed mussels (muscoli ripieni) and fresh catches like sea bass (branzino) grilled or cooked in various ways. Don't miss out on traditional Ligurian specialties such as testaroli (ancient pasta), panigacci (flatbread), and sgabei (fried dough).</li></p>
   <ol>
+    <h2>Weather Information</h2>
+  <p id="location"></p>
+  <p id="temperature"></p>
+  <p id="description"></p>
+
+    <script>const apiKey = "c0951af96de1fd164604162b30386cf6"
+const city = "LaSpezla" // Replace with desired city
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const location = data.name
+    const temperature = data.main.temp
+    const description = data.weather[0].description
+
+    document.getElementById("location").textContent = `Location: ${location}`
+    document.getElementById("temperature").textContent =
+      `Temperature: ${temperature}°C`
+    document.getElementById("description").textContent =
+      `Description: ${description}`
+  })
+  .catch((error) => console.error("Error fetching weather data:", error))
+</script>
